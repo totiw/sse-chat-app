@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "packageManager": "pnpm@11.0.9",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pnpm nodemon server.ts"
