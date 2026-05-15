@@ -5,7 +5,11 @@ const app = express();
 const HOST = process.env.HOST || "localhost";
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://sse-chat-app.vercel.app"],
+  }),
+);
 app.use(express.json());
 
 type Client = {
