@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-const HOST = process.env.HOST || "localhost";
 const PORT = process.env.PORT || 3001;
 
 app.use(
@@ -95,5 +94,5 @@ app.post("/notify", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`SSE server running on http://${HOST}:${PORT}`);
+  console.log(`SSE server running on port ${PORT}`);
 });
